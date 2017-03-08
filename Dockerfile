@@ -19,4 +19,4 @@ VOLUME /etc/quagga
 EXPOSE 179 2601 2605
 
 # Command
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+ENTRYPOINT /usr/bin/supervisord -c /etc/supervisord.conf
